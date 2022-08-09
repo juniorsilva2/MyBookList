@@ -71,6 +71,16 @@ const deletarLivro = async (req, res) => {
   }
 };
 
+// Método de testes
+const teste = async (req, res) => {
+  try {
+    res.status(200).render("update")
+  } catch (error) {
+    res.status(500).send(error.message)
+  }
+}
+
+
 module.exports = {
   adicionarLivro,
   buscarLivros,
@@ -78,4 +88,5 @@ module.exports = {
   atualizarLivro,
   deletarLivro,
   novoLivro,
+  teste,
 };

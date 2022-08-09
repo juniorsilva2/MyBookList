@@ -36,6 +36,10 @@ app.post("/updateLivro/:id", bookController.atualizarLivro);
 // app.delete("/deleteLivro/:id", bookController.deletarLivro);
 app.get("/deleteLivro/:id", bookController.deletarLivro);
 
+
+// Rota de testes
+app.get("/teste", bookController.teste);
+
 app.listen(process.env.EXPRESS_PORT, () =>
   console.log(
     `Rodando na URL: http://${process.env.EXPRESS_HOST}:${process.env.EXPRESS_PORT}`
