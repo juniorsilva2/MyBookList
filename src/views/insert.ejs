@@ -1,0 +1,16 @@
+<%- include('header.ejs'); %>
+
+<main>
+    <section class="upd-screen">
+        <h2 class="upd-title">Adicionar Novo Livro</h2>
+        <form class="upd-form" action="/addLivro" method="POST">
+            <input class="upd-input" type="text" name="titulo" id="titulo" placeholder="Titulo">
+            <input class="upd-input" type="text" name="autor" id="autor" placeholder="Autor">
+            <textarea class="upd-input" name="descricao" id="descricao" rows="4" cols="50" placeholder="Sinopse"></textarea>
+            <input class="upd-input" type="text" name="caminhoCapa" id="caminhoCapa" placeholder="Capa URL">
+            <input class="upd-btn" type="submit" value="Adicionar">
+        </form>
+    </section>
+</main>
+
+<%- include('footer.ejs'); %>
