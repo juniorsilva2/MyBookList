@@ -74,7 +74,7 @@ const deletarLivro = async (req, res) => {
 // Método de testes
 const teste = async (req, res) => {
   try {
-    res.status(200).render("update")
+    res.status(200).render("updateTeste")
   } catch (error) {
     res.status(500).send(error.message)
   }

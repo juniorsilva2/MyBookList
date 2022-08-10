@@ -4,18 +4,26 @@
     <section class="upd-screen">
         <h2 class="upd-title">Atualizar Livro</h2>
         <form class="upd-form" action="/updateLivro/<%= book.id %>" method="POST">
-            <p>Título</p>
-            <input class="upd-input" type="text" name="titulo" id="titulo" value="<%= book.titulo %>">
-            <p>Autor</p>
-            <input class="upd-input" type="text" name="autor" id="autor" value="<%= book.autor %>">
-            <p>Sinopse</p>
-            <textarea class="upd-input" name="descricao" id="descricao" rows="4" cols="50"><%= book.descricao %></textarea>
-            <p>URL da Capa</p>
-            <input class="upd-input" type="text" name="caminhoCapa" id="caminhoCapa" value="<%= book.caminhoCapa %>">
+            <label class="upd-label" for="titulo">
+                Título
+                <input class="upd-input" type="text" name="titulo" id="titulo" value="<%= book.titulo %>">
+            </label>
+            <label class="upd-label" for="autor">
+                Autor
+                <input class="upd-input" type="text" name="autor" id="autor" value="<%= book.autor %>">
+            </label>
+            <label class="upd-label" for="descricao">
+                Sinopse
+                <textarea class="upd-input" name="descricao" id="descricao" rows="4" cols="50"><%= book.descricao %></textarea>
+            </label>
+            <label class="upd-label" for="caminhoCapa">
+                URL da Capa
+                <input class="upd-input" type="text" name="caminhoCapa" id="caminhoCapa" value="<%= book.caminhoCapa %>">
+            </label>
             <div>
                 <input class="upd-btn" type="submit" value="Salvar">
+                <a href="/deleteLivro/<%= book.id %>" class="upd-btn-2">Deletar</a>
             </div>
-            <a href="/deleteLivro/<%= book.id %>"><input class="upd-btn" type="button" value="Deletar"></a>
         </form>
     </section>
 </main>
