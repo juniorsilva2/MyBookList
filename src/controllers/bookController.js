@@ -37,6 +37,7 @@ const inspecionaLivro = async (req, res) => {
 const adicionarLivro = async (req, res) => {
   try {
     const book = await BookModel.create(req.body);
+    console.log(book.id)
     res.status(200).redirect("/");
   } catch (error) {
     res.status(500).send(error.message);
