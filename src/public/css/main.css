@@ -216,7 +216,7 @@ main{
 }
 
 .upd-btn-2{
-    padding: 9.5px 17px;
+    padding: 8.3px 17px;
     background: #223;
     color: white;
     border-radius: 12px;
@@ -232,6 +232,11 @@ main{
 .upd-btn-2:hover{
     background: #233;
     cursor: pointer;
+}
+
+.p-semLivro{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 textarea:focus, input:focus {

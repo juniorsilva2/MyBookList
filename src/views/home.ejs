@@ -8,7 +8,7 @@
       <% books.forEach(book => { %>
         <a href="/Livro/<%= book.id %>"><img class="livro-2" src="<%= book.caminhoCapa %>"></a>
         <% }) }else { %>
-          <p style="padding-top: 3rem; padding-bottom: 2rem;">Não há livros no banco de dados, por favor adicione</p>
+          <p class="p-semLivro"">Não há livros no banco de dados, por favor adicione</p>
         <% } %>
       </div>
   </section>
