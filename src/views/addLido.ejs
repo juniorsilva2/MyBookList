@@ -1,12 +1,12 @@
-<%- include('header.ejs'); %>
+<%- include('headerC.ejs'); %>
 
 <main>
     <% if(books.length > 0){ %>
       <section class="lista-2">
-      <h2 class="lista-title">Minha Lista</h2>
+      <h2 class="lista-title">Livros Cadastrados</h2>
       <div class="lista-scroll-2">
       <% books.forEach(book => { %>
-        <a href="/atualizaLivro/<%= book.id %>"><img class="livro-2" src="<%= book.caminhoCapa %>"></a>
+        <a href="/user/addLivroLido/<%= book.id %>"><img class="livro-2" src="<%= book.caminhoCapa %>"></a>
         <% }) }else { %>
           <p class="p-semLivro">Não há livros no banco de dados, por favor adicione</p>
         <% } %>

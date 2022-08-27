@@ -1,4 +1,10 @@
 const BookModel = require("../models/bookModel");
+const LendoModel = require("../models/lendoModel");
+const LidoModel = require("../models/lidoModel");
+const LerDepoisModel = require("../models/lerDepoisModel");
+const bookCacheController = require("../controllers/bookCacheController");
+const {client} = require("../database/redis");
+const {cacheKeys} = require("../controllers/bookCacheController");
 
 // Renderiza a página principal
 const buscarLivros = async (req, res) => {
@@ -37,7 +43,8 @@ const inspecionaLivro = async (req, res) => {
 const adicionarLivro = async (req, res) => {
   try {
     const book = await BookModel.create(req.body);
-    console.log(book.id)
+    await client.set(book.titulo, book.titulo, {EX: 1800});
+    cacheKeys.push(book.titulo);
     res.status(200).redirect("/");
   } catch (error) {
     res.status(500).send(error.message);
@@ -72,15 +79,28 @@ const deletarLivro = async (req, res) => {
   }
 };
 
-// Método de testes
-const teste = async (req, res) => {
+// Renderiza a página das listas de usuários
+const livrosUser = async (req, res) => {
   try {
-    res.status(200).render("updateTeste")
+    const booksLendo = await LendoModel.find()
+    const booksLido = await LidoModel.find()
+    const booksLerDepois = await LerDepoisModel.find()
+    const booksCache = []
+    const books = []
+    let count = 0
+
+    for (const cacheKey of cacheKeys) {
+      const bookCache = await client.get(cacheKey)
+      books.push(bookCache)
+      const temp = await BookModel.find({titulo: books[count]}, {_id:0, titulo:1, autor:1, descricao:1, caminhoCapa:1});
+      booksCache.push(temp);
+      count++
+    }
+    res.status(200).render("index", { booksLendo, booksLido, booksLerDepois, booksCache: booksCache.flat() });
   } catch (error) {
-    res.status(500).send(error.message)
+    res.status(500).send(error.message);
   }
 }
-
 
 module.exports = {
   adicionarLivro,
@@ -89,5 +109,5 @@ module.exports = {
   atualizarLivro,
   deletarLivro,
   novoLivro,
-  teste,
+  livrosUser,
 };

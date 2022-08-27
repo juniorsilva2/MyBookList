@@ -1,35 +1,60 @@
-<%- include('header.ejs'); %>
+<%- include('headerC.ejs'); %>
 
 <main>
+
+  <% if(booksCache.length > 0) { %>
+    <section class="lista">
+      <h2 class="lista-title">Adicionados Recentemente</h2>
+      <div class="lista-scroll"> 
+        <% booksCache.forEach(bookCache => { %>
+          <a href="/user/verCache/<%= bookCache.titulo %>"><img src="<%= bookCache.caminhoCapa %>" class="livro"></a>
+        <% } ) %>
+      </div>
+    </section>
+  <% } %>
+  
   <section class="lista">
-    <h2 class="lista-title">Lendo</h2>
-    <div class="lista-scroll">
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
-      <div class="livro">livro</div>
+    <h2 class="lista-title">Em Andamento</h2>
+    <div class="lista-scroll"> 
+      <% if(booksLendo.length > 0) { %>
+      <% booksLendo.forEach(book => { %>
+        <a href="/user/verLendo/<%= book.id %>"><img src="<%= book.caminhoCapa %>" class="livro"></a>
+      <% } ) %>
+        <a href="/user/addLendo"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
+      <% } else { %>
+        <a href="/user/addLendo"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
+      <% } %>    
     </div>
   </section>
+
   <section class="lista">
-    <h2 class="lista-title">Ler Depois</h2>
-    <div class="lista-scroll">
-      <div class="livro">livro</div>
+    <h2 class="lista-title">Finalizados</h2>
+    <div class="lista-scroll"> 
+      <% if(booksLido.length > 0) { %>
+      <% booksLido.forEach(book => { %>
+        <a href="/user/verLido/<%= book.id %>"><img src="<%= book.caminhoCapa %>" class="livro"></a>
+      <% } ) %>
+        <a href="/user/addLido"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
+      <% } else { %>
+        <a href="/user/addLido"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
+      <% } %>    
     </div>
   </section>
+  
   <section class="lista">
-    <h2 class="lista-title">Lidos</h2>
-    <div class="lista-scroll">
-      <div class="livro">livro</div>
+    <h2 class="lista-title">Livros Salvos para Depois</h2>
+    <div class="lista-scroll"> 
+      <% if(booksLerDepois.length > 0) { %>
+      <% booksLerDepois.forEach(book => { %>
+        <a href="/user/verLerDepois/<%= book.id %>"><img src="<%= book.caminhoCapa %>" class="livro"></a>
+      <% } ) %>
+        <a href="/user/addLerDepois"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
+      <% } else { %>
+        <a href="/user/addLerDepois"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
+      <% } %>    
     </div>
   </section>
+
 </main>
 
 <%- include('footer.ejs'); %>

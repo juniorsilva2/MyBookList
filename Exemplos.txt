@@ -1,0 +1,38 @@
+{
+    "titulo" : "Fullmetal Alchemist - Vol. 25",
+    "autor" : "Hiromu Arakawa",
+    "descricao" : "Os humanos escolhidos para serem os “sacrifícios” são levados até o homúnculo original, aquele chamado de “Pai” pelos homúnculos. Seus planos maquiavélicos estão prestes a serem revelados, e faltam apenas algumas peças para o tabuleiro ficar completo. Qual será a próxima jogada?!",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/61QtE9IZvvL.jpg"
+}
+
+
+{
+    "titulo" : "Harry Potter e a pedra filosofal",
+    "autor" : "J.K. Rowling",
+    "descricao" : "Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/81ibfYk4qmL.jpg"
+}
+
+
+{
+    "titulo" : "Harry Potter e a Câmara Secreta",
+    "autor" : "J.K. Rowling",
+    "descricao" : "Depois de férias aborrecidas na casa dos tios trouxas, está na hora de Harry Potter voltar a estudar. Coisas acontecem, no entanto, para dificultar o regresso de Harry. Persistente e astuto, o herói não se deixa intimidar pelos obstáculos e, com a ajuda dos fiéis amigos Weasley, começa o ano letivo na Escola de Magia e Bruxaria de Hogwarts. As novidades não são poucas. Novos colegas, novos professores, muitas e boas descobertas e um grande e perigosos desafio. Alguém ou alguma coisa ameaça a segurança e a tranquilidade dos membros de Hogwarts.",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/81jbivNEVML.jpg"
+}
+
+
+{
+    "titulo" : "Harry Potter e o cálice de fogo",
+    "autor" : "J.K. Rowling",
+    "descricao" : "Nesta aventura, o feiticeiro cresceu e está com 14 anos. O início do ano letivo de Harry Potter reserva muitas emoções, mágicas, e acontecimentos inesperados, além de um novo torneio em que os alunos de Hogwarts terão de demonstrar todas as habilidade mágicas e nãomágicas que vêm adquirindo ao longo de suas vidas. Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry. Além disso, ele terá que lidar ainda com os problemas comuns da adolescência amor, amizade, aceitação e rejeição.",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/81nTLN-kz7L.jpg"
+}
+
+{
+    "titulo" : "Harry Potter e o prisioneiro de Azkaban",
+    "autor" : "J.K. Rowling",
+    "descricao" : "As aulas estão de volta à Hogwarts e Harry Potter não vê a hora de embarcar no expresso a vapor que o levará de volta à escola de bruxaria. Mais uma vez suas férias na rua dos Alfeneiros foi triste e solitária. Com muita ação, humor e magia, 'Harry Potter e o prisioneiro de Azkaban' traz de volta o gigante atrapalhado Rúbeo Hagrid, o sábio diretor Alvo Dumbledore, a exigente professora de transformação Minerva MacGonagall e o novo mestre Lupin, que guarda grandes surpresas para Harry.",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/81u+ljPVifL.jpg"
+}
+
