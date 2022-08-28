@@ -49,7 +49,6 @@ app.get("/user", bookController.livrosUser);
 
 // Páginas para adicionar livros as listas
 app.get("/user/addLendo", lendoController.verAddLendo);
-app.get("/user/addLido", lidoController.verAddLido);
 app.get("/user/addLerDepois", lerDepoisController.verAddLerDepois);
 
 
@@ -62,7 +61,7 @@ app.get("/user/verCache/:titulo", bookCacheController.verCache);
 
 // Métodos para adicionar livros às listas
 app.get("/user/addLivroLendo/:id", lendoController.adicionarLivroLendo);
-app.get("/user/addLivroLido/:id", lidoController.adicionarLivroLido);
+app.get("/user/addLivroLido/:titulo", lidoController.adicionarLivroLido);
 app.get("/user/addLivroLerDepois/:id", lerDepoisController.adicionarLivroLerDepois);
 
 

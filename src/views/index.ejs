@@ -27,19 +27,16 @@
     </div>
   </section>
 
-  <section class="lista">
-    <h2 class="lista-title">Finalizados</h2>
-    <div class="lista-scroll"> 
-      <% if(booksLido.length > 0) { %>
-      <% booksLido.forEach(book => { %>
-        <a href="/user/verLido/<%= book.id %>"><img src="<%= book.caminhoCapa %>" class="livro"></a>
-      <% } ) %>
-        <a href="/user/addLido"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
-      <% } else { %>
-        <a href="/user/addLido"><div class="livro"><span class="material-symbols-outlined"> add </span></div></a>
-      <% } %>    
-    </div>
-  </section>
+  <% if(booksLido.length > 0) { %>
+    <section class="lista">
+      <h2 class="lista-title">Finalizados</h2>
+      <div class="lista-scroll"> 
+        <% booksLido.forEach(book => { %>
+          <a href="/user/verLido/<%= book.id %>"><img src="<%= book.caminhoCapa %>" class="livro"></a>
+        <% } ) %>
+      </div>
+    </section>
+  <% } %>    
   
   <section class="lista">
     <h2 class="lista-title">Livros Salvos para Depois</h2>

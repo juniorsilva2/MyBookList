@@ -1,4 +1,5 @@
 const LidoModel = require('../models/lidoModel');
+const LendoModel = require('../models/lendoModel')
 const BookModel = require('../models/bookModel');
 
 
@@ -16,22 +17,12 @@ const verLido = async (req, res) => {
     }
 };
 
-// Renderiza a página para escolher o livro
-const verAddLido = async (req, res) => {
-  try {
-    const books = await BookModel.find();
-    res.status(200).render("addLido", { books });
-  } catch (error) {
-    res.status(500).send(error.message);
-  }
-}
-
 // Adiciona um livro
 const adicionarLivroLido = async (req, res) => {
     try {
-      const book = await BookModel.findById(req.params.id, { _id:0, titulo:1, autor:1, descricao:1, caminhoCapa:1 });
-      const result = await LidoModel.insertMany(book);
-      console.log(result);
+      const book = await BookModel.findOne({titulo: req.params.titulo}, { _id:0, titulo:1, autor:1, descricao:1, caminhoCapa:1 });
+      await LidoModel.insertMany(book);
+      await LendoModel.findOneAndRemove({titulo: req.params.titulo}); 
       res.status(200).redirect("/user");
     } catch (error) {
       res.status(500).send(error.message);
@@ -56,5 +47,4 @@ module.exports = {
     verLido,
     adicionarLivroLido,
     deletarLivroLido,
-    verAddLido,
 }
