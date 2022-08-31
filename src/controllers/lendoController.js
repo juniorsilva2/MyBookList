@@ -3,7 +3,7 @@ const BookModel = require('../models/bookModel');
 const redisClient = require('../database/redis');
 
 
-// Renderiza a página do livro e adiciona o livro ao cache
+// Renderiza a página do livro
 const verLendo = async (req, res) => {
     try {
       const book = await LendoModel.findById(req.params.id);

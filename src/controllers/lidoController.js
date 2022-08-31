@@ -17,7 +17,7 @@ const verLido = async (req, res) => {
     }
 };
 
-// Adiciona um livro
+// Adiciona um livro e retira o mesmo da lista 'Lendo'
 const adicionarLivroLido = async (req, res) => {
     try {
       const book = await BookModel.findOne({titulo: req.params.titulo}, { _id:0, titulo:1, autor:1, descricao:1, caminhoCapa:1 });

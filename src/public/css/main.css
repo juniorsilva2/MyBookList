@@ -40,7 +40,8 @@ header{
 }
 .header-nav{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: flex-end;
     align-items: center;
     height: 90%;
     width: 30%;
@@ -196,7 +197,14 @@ main{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-bottom: 1px solid white;
     transition: all .3s linear;
-    width: 60%;
+    width: 88%;
+
+    /* border-radius: 7px;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-bottom: 1px solid white;
+    transition: all .3s linear;
+    width: 60%; */
 }
 
 .upd-input:hover{
@@ -206,10 +214,39 @@ main{
 .upd-label{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: left;
+
+    /* display: flex;
+    flex-direction: column;
     width: 90%;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
+
+.left{
+    position: relative;
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+.left img{
+    background: pink;
+    min-height: 400px;
+    width: 60%;
+    border-radius: 7px;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
 .upd-btn{
     width: 85px;
     height: 35px;
