@@ -80,3 +80,5 @@ app.listen(process.env.EXPRESS_PORT, () =>
     `Rodando na URL: http://${process.env.EXPRESS_HOST}:${process.env.EXPRESS_PORT}`
   )
 );
+
+module.exports = app;

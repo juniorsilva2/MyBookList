@@ -10,7 +10,11 @@ const {cacheKeys} = require("../controllers/bookCacheController");
 const buscarLivros = async (req, res) => {
   try {
     const books = await BookModel.find();
-    res.status(200).render("home", { books });
+    if (books === null) {
+      res.status(404).render("home", { books });
+    } else {
+      res.status(200).render("home", { books });
+    }
   } catch (error) {
     res.status(404).send(error);
   }
@@ -45,7 +49,7 @@ const adicionarLivro = async (req, res) => {
     const book = await BookModel.create(req.body);
     await client.set(book.titulo, book.titulo, {EX: 1800});
     cacheKeys.push(book.titulo);
-    res.status(200).redirect("/");
+    res.status(302).redirect("/");
   } catch (error) {
     res.status(500).send(error.message);
   }
@@ -72,7 +76,7 @@ const deletarLivro = async (req, res) => {
     if (book === null) {
       res.status(404).send("Livro não encontrado");
     } else {
-      res.status(200).redirect("/");
+      res.status(302).redirect("/");
     }
   } catch (error) {
     res.status(500).send(error.message);

@@ -36,3 +36,33 @@
     "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/81u+ljPVifL.jpg"
 }
 
+{
+    "titulo" : "A Guerra dos Tronos : As Crônicas de Gelo e Fogo, volume 1",
+    "autor" : "George R. R. Martin",
+    "descricao" : "A guerra dos tronos é o primeiro livro da série best-seller internacional As Crônicas de Gelo e Fogo, que deu origem à adaptação de sucesso da HBO, Game of Thrones.
+O verão pode durar décadas. O inverno, toda uma vida. E a guerra dos tronos começou. Como Guardião do Norte, lorde Eddard Stark não fica feliz quando o rei Robert o proclama a nova Mão do Rei. Sua honra o obriga a aceitar o cargo e deixar seu posto em Winterfell para rumar para a corte, onde os homens fazem o que lhes convém, não o que devem... e onde um inimigo morto é algo a ser admirado.",
+    "caminhoCapa" : "https://m.media-amazon.com/images/P/B07PPB9QW1.01._SCLZZZZZZZ_SX500_.jpg",
+}
+
+{
+    "titulo" : "Fogo & Sangue – Volume 1",
+    "autor" : "George R. R. Martin",
+    "descricao" : "Séculos antes dos eventos de A guerra dos tronos, a Casa Targaryen – única família de senhores dos dragões a sobreviver à Destruição de Valíria – tomou residência em Pedra do Dragão. A história de Fogo e sangue começa com o lendário Aegon, o Conquistador, criador do Trono de Ferro, e segue narrando as gerações de Targaryen que lutaram para manter o assento, até a guerra civil que quase destruiu sua dinastia.",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/818yNY0mMZL.jpg",
+}
+
+{
+    "titulo" : "As coisas que você só vê quando desacelera: Como manter a calma em um mundo frenético",
+    "autor" : "Haemin Sunim ",
+    "descricao" : "De tempos em tempos, surge um livro que, com sua maneira original de iluminar importantes temas espirituais, se torna um fenômeno tão grande em seu país de origem que acaba chamando a atenção e encantando leitores de todo o mundo.",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/61OEg3V-FTL.jpg",
+}
+
+
+
+{
+    "titulo" : "A Arte da Guerra",
+    "autor" : "Sun Tzu",
+    "descricao" : "Táticas para conquistar a vitória, abreviar o caos, aplicar o princípio do contrário e reconhecer a importância de delegar para avançar são conhecimentos indispensáveis em ambientes competitivos e cenários desafiadores.",
+    "caminhoCapa" : "https://images-na.ssl-images-amazon.com/images/I/71ZRNxzUgGL.jpg",
+}
